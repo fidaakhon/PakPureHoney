@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.sliderr {
+  /* position: absolute; */
+  margin-top: 75px;
+}
 
 @keyframes App-logo-spin {
   from {

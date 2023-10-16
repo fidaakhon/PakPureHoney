@@ -1,0 +1,63 @@
+/* Example styles for the Header component */
+header {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  margin: 0;
+}
+
+.manu_links li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.logo a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.small_manu {
+    margin-top: 20px;
+}
+
+.logo a:hover {
+  color: #ff9900;
+}
+.manu_links li a:hover {
+  color: #ff9900;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: row; /* Switch back to horizontal layout on larger screens */
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    ul {
+      flex-direction: column; /* Stack list items vertically on small screens */
+      align-items: center;
+    }
+  }

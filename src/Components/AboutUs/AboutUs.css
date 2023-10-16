@@ -1,0 +1,94 @@
+/* AboutUs.module.css */
+.aboutUs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aboutUs h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutUs p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about_info {
+    border: 1px solid #ff9900;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.whyChoose {
+    margin-top: 20px;
+}
+
+.whyChoose h3,
+.deliveryInfo h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.whyChoose ul {
+    list-style: none;
+    border: 1px solid #ff9900;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.whyChoose ul li {
+    margin-bottom: 10px;
+}
+
+.whyChoose ul li span {
+    font-weight: 500;
+}
+
+.whyChoose ul li::before {
+    content: '\2022';
+    /* Bullet point */
+    color: #ff9900;
+    /* Bullet point color */
+    font-size: 1.2em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.deliveryInfo__info {
+    border: 1px solid #ff9900;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tnankyou {
+    margin-top: 10px;
+    border: 1px solid #ff9900;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.truck {
+    width: 100px;
+    height: 100px;
+}
+.Tnankyou img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Add more styles as needed */

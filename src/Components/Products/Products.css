@@ -1,0 +1,24 @@
+.namePrice {
+    display: flex;
+    justify-content: space-around;
+}
+.namePrice a {
+    text-decoration: none;
+    color: black;
+}
+
+.products h2 {
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.product_imgs {
+    border-radius: 10px 100px / 120px 100px;
+}
+
+@media (max-width: 768px) {
+    .products h2 {
+        text-align: center;
+        margin: 20px 0;
+    }
+  }

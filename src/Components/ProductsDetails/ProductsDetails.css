@@ -1,0 +1,159 @@
+/* ProductsDetails.css */
+.productsDetails {
+  padding: 20px;
+}
+
+.productsDetails h2 {
+  text-align: center;
+  /* margin-bottom: 20px;  */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_images {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.productCharacteristics,
+.productKeyfeatures, .HealthBenefits {
+  display: flex;
+  border: 1px solid #ff9900;
+}
+
+.productCharacteristicsText, .HealthBenefitsText {
+  margin: auto;
+}
+
+.productCharacteristicsText h4,
+.productKeyfeaturesText h4, .HealthBenefitsText h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.productCharacteristicsText ul,
+.productKeyfeaturesText ul, .HealthBenefitsText ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.productKeyfeaturesText {
+  width: 50%;
+  margin: auto;
+}
+
+.productKeyfeaturesText ul li {
+  /* margin: auto; */
+  text-align: center;
+}
+
+/* .productKeyfeatures img {
+  width: 50%;
+  height: auto;
+} */
+
+.down-content {
+  padding: 20px;
+}
+
+h5,
+h6 {
+  margin: 0;
+  color: #333;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+  color: #ff9900;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.priceOrder h5 {
+  margin: 0;
+  color: #333;
+  background-color: #ff9900;
+  padding: 10px;
+  border-radius: 10px 100px / 120px 100px;
+}
+.priceOrder h5:hover {
+  background-color: #333;
+  color: #ff9900;
+}
+.orderBtn {
+  background-color: #ff9900;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px 100px / 120px 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* margin-top: 20px; */
+  font-weight: 700;
+}
+.orderBtn:hover {
+  background-color: #333;
+  color: #ff9900;
+}
+.priceOrder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* You can add more styles as needed */
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%;
+  }
+
+  .product_images {
+    width: 100%;
+  }
+
+  .down-content {
+    padding: 0;
+  }
+
+  .productCharacteristics, .HealthBenefits {
+    flex-direction: column;
+  }
+
+  .productKeyfeatures {
+    flex-direction: column-reverse;
+  }
+  .productCharacteristicsText, .productKeyfeaturesText {
+    margin-top: 20px;
+    text-align: left;
+  }
+  .productCharacteristicsText ul, .productKeyfeaturesText ul, .HealthBenefitsText ul {
+    text-align: left;
+  }
+
+}
