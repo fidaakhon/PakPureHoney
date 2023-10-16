@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pakpurehoney/static/css/main.df428069.css",
-    "main.js": "/pakpurehoney/static/js/main.2cb9729e.js",
-    "static/js/787.7502c4df.chunk.js": "/pakpurehoney/static/js/787.7502c4df.chunk.js",
-    "static/media/beri1.jpg": "/pakpurehoney/static/media/beri1.cc4bdb700dd0efd1194a.jpg",
-    "static/media/facebook.png": "/pakpurehoney/static/media/facebook.f25335b463a12545be9b.png",
-    "static/media/5229524.png": "/pakpurehoney/static/media/5229524.3b49e10473969b92100b.png",
-    "static/media/truck.svg": "/pakpurehoney/static/media/truck.e91b6effb165f0b8f62ffeb1d34c21a2.svg",
-    "index.html": "/pakpurehoney/index.html",
-    "main.df428069.css.map": "/pakpurehoney/static/css/main.df428069.css.map",
-    "main.2cb9729e.js.map": "/pakpurehoney/static/js/main.2cb9729e.js.map",
-    "787.7502c4df.chunk.js.map": "/pakpurehoney/static/js/787.7502c4df.chunk.js.map"
+    "main.css": "/PakPureHoney/static/css/main.df428069.css",
+    "main.js": "/PakPureHoney/static/js/main.770014c4.js",
+    "static/js/787.7502c4df.chunk.js": "/PakPureHoney/static/js/787.7502c4df.chunk.js",
+    "static/media/beri1.jpg": "/PakPureHoney/static/media/beri1.cc4bdb700dd0efd1194a.jpg",
+    "static/media/facebook.png": "/PakPureHoney/static/media/facebook.f25335b463a12545be9b.png",
+    "static/media/5229524.png": "/PakPureHoney/static/media/5229524.3b49e10473969b92100b.png",
+    "static/media/truck.svg": "/PakPureHoney/static/media/truck.e91b6effb165f0b8f62ffeb1d34c21a2.svg",
+    "index.html": "/PakPureHoney/index.html",
+    "main.df428069.css.map": "/PakPureHoney/static/css/main.df428069.css.map",
+    "main.770014c4.js.map": "/PakPureHoney/static/js/main.770014c4.js.map",
+    "787.7502c4df.chunk.js.map": "/PakPureHoney/static/js/787.7502c4df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df428069.css",
-    "static/js/main.2cb9729e.js"
+    "static/js/main.770014c4.js"
   ]
 }
