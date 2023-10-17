@@ -22,11 +22,13 @@
 .about_info {
     border: 1px solid #ff9900;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px 100px / 120px 100px;
 }
 
 .whyChoose {
     margin-top: 20px;
+    /* padding: 20px; */
+    /* width: 70vw; */
 }
 
 .whyChoose h3,
@@ -40,7 +42,8 @@
     list-style: none;
     border: 1px solid #ff9900;
     padding: 1rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 10px 75px / 120px 100px;
 }
 
 .whyChoose ul li {
@@ -56,7 +59,7 @@
     /* Bullet point */
     color: #ff9900;
     /* Bullet point color */
-    font-size: 1.2em;
+    font-size: 1.5em;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -65,7 +68,7 @@
 .deliveryInfo__info {
     border: 1px solid #ff9900;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px 100px / 120px 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,7 +79,7 @@
     margin-top: 10px;
     border: 1px solid #ff9900;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px 100px / 120px 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,6 +92,15 @@
 .Tnankyou img {
     width: 100px;
     height: 100px;
+}
+
+@media (max-width: 768px) {
+    .about_info {
+        border-radius: 10px 60px / 120px 100px;
+    }
+    .whyChoose ul {
+        border-radius: 10px 75px / 120px 60px;
+    }
 }
 
 /* Add more styles as needed */

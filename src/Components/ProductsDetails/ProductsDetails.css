@@ -156,4 +156,11 @@ p {
     text-align: left;
   }
 
+  .priceOrder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
 }

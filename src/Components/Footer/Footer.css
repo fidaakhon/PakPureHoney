@@ -6,6 +6,7 @@
     border: 1px solid #ff9900;
     width: 100%;
     margin: 0 auto;
+    border-radius: 10px 100px / 120px 100px;
   }
   
   .footerBottom {
