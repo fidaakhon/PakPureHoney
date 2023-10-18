@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductsDetails.css";
 // import Header from "../Header/Header";
 import Img1 from '../Images/Product1Imgs/beri1.jpg';
@@ -6,17 +6,33 @@ import Img2 from '../Images/Product1Imgs/beri2.jpg';
 import Img3 from '../Images/Product1Imgs/beri3.jpg';
 import Img4 from '../Images/Product1Imgs/beri4.jpg';
 
-const ProductsDetails = ({ showDetails }) => {
+const ProductsDetails = ({ showDetails, productId }) => {
     const Products = [
-        { id: 1, name: "Beri Honey", description: "Beri Honey, sourced from the nectar of beri flowers in the pristine valleys of Pakistan, is a testament to nature's purest sweetness. This exquisite honey is carefully harvested by our dedicated beekeepers, ensuring that you receive a product of the highest quality and purity.", Img1: Img1, Img2: Img2, Img3: Img3, Img4: Img4, price: "22.5/kg" },
+        { id: 1, name: "Beri Honey", description: "Beri Honey, sourced from the nectar of beri flowers in the pristine valleys of Pakistan, is a testament to nature's purest sweetness. This exquisite honey is carefully harvested by our dedicated beekeepers, ensuring that you receive a product of the highest quality and purity.", Img1: Img1, Img2: Img2, Img3: Img3, Img4: Img4, price: "22.5$/kg" },
+        {id: 2, name: " Honey", description: "Beri Honey, sourced from the nectar of beri flowers in the pristine valleys of Pakistan, is a testament to nature's purest sweetness. This exquisite honey is carefully harvested by our dedicated beekeepers, ensuring that you receive a product of the highest quality and purity.", Img1: Img1, Img2: Img2, Img3: Img3, Img4: Img4, price: "10.5$/kg"}, 
+        {id: 3, name: "Desi", description: "Beri Honey, sourced from the nectar of beri flowers in the pristine valleys of Pakistan, is a testament to nature's purest sweetness. This exquisite honey is carefully harvested by our dedicated beekeepers, ensuring that you receive a product of the highest quality and purity.", Img1: Img1, Img2: Img2, Img3: Img3, Img4: Img4, price: "15.5$/kg"},
+
     ]
+    const [ids, setIds] = useState(0);
+
+    useEffect(() => {
+        setIds(productId);
+        return () => {
+            setIds(0);
+        };
+    }, [productId]);
+    console.log(ids);
+    const ShowItem = Products.filter((product) => product.id === ids);
+
+
+
     return (
         <>
             {/* <Header /> */}
             <div className="productsDetails">
                 <div className="container">
                     <div className="row">
-                        {Products.map((product) => (
+                        {ShowItem.map((product) => (
                             <div className="col-md-12" key={product.id}>
                                 <div className="product-item">
                                     <h2>{product.name}</h2>
@@ -28,10 +44,10 @@ const ProductsDetails = ({ showDetails }) => {
                                         <div className="productCharacteristicsText">
                                             <h4>Characteristics</h4>
                                             <ul>
-                                                <li>Color: Light Amber</li>
-                                                <li>Flavor: Sweet</li>
-                                                <li>Texture: Smooth</li>
-                                                <li>Crystallization: Slow</li>
+                                                <li><strong>Color:</strong>Light Amber</li>
+                                                <li><strong>Flavor: </strong>Sweet</li>
+                                                <li><strong>Texture: </strong>Smooth</li>
+                                                <li><strong>Crystallization:</strong> Slow</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -39,7 +55,7 @@ const ProductsDetails = ({ showDetails }) => {
                                         <div className="productKeyfeaturesText">
                                             <h4>Key Features</h4>
                                             <ul>
-                                                <li>100% Pure and Natural</li>
+                                                <li>Pure & Natural</li>
                                                 <li>Unpasteurized</li>
                                                 <li>Unprocessed</li>
                                                 <li>Free from additives</li>

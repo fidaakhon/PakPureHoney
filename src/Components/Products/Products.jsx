@@ -29,11 +29,13 @@ const Products = ({ showDetails }) => {
                     {products.map((product) => (
                         <div className="col-md-4" key={product.id}>
                             <div className="product-item">
+                            <a href="#products">
                                 <img src={product.src} alt={product.name} className="product_imgs" style={{
                                     width: "100%",
                                     height: "300px",
                                 }}
                                     onClick={() => showDetail(product.id)} />
+                                    </a>
                                 <div className="down-content namePrice">
                                     
                                         <h5>{product.name}</h5>

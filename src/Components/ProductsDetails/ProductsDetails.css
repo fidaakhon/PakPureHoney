@@ -32,26 +32,33 @@
 }
 
 .productCharacteristics,
-.productKeyfeatures, .HealthBenefits {
+.productKeyfeatures,
+.HealthBenefits {
   display: flex;
   border: 1px solid #ff9900;
 }
 
-.productCharacteristicsText, .HealthBenefitsText {
+.productCharacteristicsText,
+.HealthBenefitsText {
   margin: auto;
 }
 
 .productCharacteristicsText h4,
-.productKeyfeaturesText h4, .HealthBenefitsText h4 {
+.productKeyfeaturesText h4,
+.HealthBenefitsText h4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
 .productCharacteristicsText ul,
-.productKeyfeaturesText ul, .HealthBenefitsText ul {
+.productKeyfeaturesText ul,
+.HealthBenefitsText ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .productKeyfeaturesText {
@@ -62,6 +69,7 @@
 .productKeyfeaturesText ul li {
   /* margin: auto; */
   text-align: center;
+  margin-left: 5rem;
 }
 
 /* .productKeyfeatures img {
@@ -101,10 +109,12 @@ p {
   padding: 10px;
   border-radius: 10px 100px / 120px 100px;
 }
+
 .priceOrder h5:hover {
   background-color: #333;
   color: #ff9900;
 }
+
 .orderBtn {
   background-color: #ff9900;
   color: #333;
@@ -116,10 +126,12 @@ p {
   /* margin-top: 20px; */
   font-weight: 700;
 }
+
 .orderBtn:hover {
   background-color: #333;
   color: #ff9900;
 }
+
 .priceOrder {
   display: flex;
   justify-content: space-around;
@@ -141,19 +153,27 @@ p {
     padding: 0;
   }
 
-  .productCharacteristics, .HealthBenefits {
+  .productCharacteristics,
+  .HealthBenefits {
     flex-direction: column;
   }
 
   .productKeyfeatures {
     flex-direction: column-reverse;
   }
-  .productCharacteristicsText, .productKeyfeaturesText {
+
+  .productCharacteristicsText,
+  .productKeyfeaturesText {
     margin-top: 20px;
     text-align: left;
   }
-  .productCharacteristicsText ul, .productKeyfeaturesText ul, .HealthBenefitsText ul {
+
+  .productCharacteristicsText ul,
+  .productKeyfeaturesText ul,
+  .HealthBenefitsText ul {
     text-align: left;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
   }
 
   .priceOrder {
@@ -161,6 +181,14 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
+  }
+
+  li {
+    text-align: right;
+    margin-left: 0;
+  }
+  .productKeyfeaturesText ul li {
+    margin-left: 0;
   }
 
 }

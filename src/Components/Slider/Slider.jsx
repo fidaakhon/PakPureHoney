@@ -19,24 +19,21 @@ function ControlledCarousel() {
                 <Carousel.Item className='slider_items'>
                     <img className="d-block sliderImg" src={Img1} alt="First slide" />
                     <Carousel.Caption>
-                        <h3 className='h3'>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className='h3'>PakPureHoney</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
 
                 <Carousel.Item className='slider_items'>
                     <img className="d-block sliderImg" src={Img2} alt="First slide" />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>PakPureHoney</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
 
                 <Carousel.Item className='slider_items'>
                     <img className="d-block sliderImg" src={Img3} alt="First slide" />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>PakPureHoney</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
 

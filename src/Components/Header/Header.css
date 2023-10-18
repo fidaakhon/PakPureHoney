@@ -46,7 +46,13 @@ li {
   color: #ff9900;
 }
 .manu_links li a:hover {
-  color: #ff9900;
+  color: #c59b5c;
+}
+.active-link {
+  background-color: #ff9900;
+  color: #333;
+  padding: 3px 10px;
+  border-radius: 10px 100px / 120px 100px;
 }
 
 

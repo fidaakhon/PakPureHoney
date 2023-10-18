@@ -12,9 +12,12 @@ import ProductsDetails from './Components/ProductsDetails/ProductsDetails';
 
 function App() {
   const [showDetail, setShowDetail] = useState(false);
+  const [productId, setProductId] = useState(0);
   const showDetails = (id) => {
-    console.log(id);
+    // console.log(id);
     setShowDetail(!showDetail);
+    setProductId(id);
+    // console.log(productId); 
   };
 
 
@@ -30,7 +33,7 @@ function App() {
         </div>
       </div>
       <div id="products">
-      {showDetail ? <ProductsDetails showDetails={showDetails} /> : <Products showDetails={showDetails} />}
+      {showDetail ? <ProductsDetails showDetails={showDetails} productId={productId} /> : <Products showDetails={showDetails} />}
         {/* <Products showDetails={showDetails} /> */}
       </div>
       <div id='about'>
