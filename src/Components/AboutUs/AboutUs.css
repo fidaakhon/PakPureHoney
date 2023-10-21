@@ -101,6 +101,9 @@
     .whyChoose ul {
         border-radius: 10px 75px / 120px 60px;
     }
+    .whyChoose ul li {
+        text-align: left;
+    }
 }
 
 /* Add more styles as needed */

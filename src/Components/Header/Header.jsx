@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 800);
   const [showMenu, setShowMenu] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
@@ -47,8 +49,12 @@ const Header = () => {
               <a href="#contact" onClick={() => handleLinkClick(3)}>Contact</a>
             </li>
           </ul>) : (
-          <div className="menu_icon" onClick={() => setShowMenu(!showMenu)}>
-            <DehazeIcon />
+          <div className="menu_icon" onClick={() => {
+            setIsOpen(!isOpen);
+            setShowMenu(!showMenu)
+          }}>
+            {isOpen ? <CloseIcon /> :
+              <DehazeIcon />}
           </div>)}
       </nav>
       {showMenu && (
