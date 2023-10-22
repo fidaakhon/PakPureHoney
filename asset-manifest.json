@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PakPureHoney/static/css/main.2f28ae0d.css",
-    "main.js": "/PakPureHoney/static/js/main.c1109dfd.js",
+    "main.js": "/PakPureHoney/static/js/main.fdd65c11.js",
     "static/js/787.7502c4df.chunk.js": "/PakPureHoney/static/js/787.7502c4df.chunk.js",
     "static/media/beri1.jpg": "/PakPureHoney/static/media/beri1.cc4bdb700dd0efd1194a.jpg",
     "static/media/facebook.png": "/PakPureHoney/static/media/facebook.f25335b463a12545be9b.png",
@@ -9,11 +9,11 @@
     "static/media/truck.svg": "/PakPureHoney/static/media/truck.e91b6effb165f0b8f62ffeb1d34c21a2.svg",
     "index.html": "/PakPureHoney/index.html",
     "main.2f28ae0d.css.map": "/PakPureHoney/static/css/main.2f28ae0d.css.map",
-    "main.c1109dfd.js.map": "/PakPureHoney/static/js/main.c1109dfd.js.map",
+    "main.fdd65c11.js.map": "/PakPureHoney/static/js/main.fdd65c11.js.map",
     "787.7502c4df.chunk.js.map": "/PakPureHoney/static/js/787.7502c4df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f28ae0d.css",
-    "static/js/main.c1109dfd.js"
+    "static/js/main.fdd65c11.js"
   ]
 }
